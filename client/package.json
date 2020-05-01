@@ -32,7 +32,7 @@
     "gatsby-remark-prismjs": "^3.2.0",
     "gatsby-source-filesystem": "^2.0.16",
     "gatsby-transformer-remark": "^2.2.0",
-    "jquery": "3.3.1",
+    "jquery": "3.5.0",
     "lodash": "^4.17.10",
     "loop-protect": "^2.1.6",
     "monaco-editor-webpack-plugin": "^1.5.4",
@@ -63,7 +63,8 @@
     "sass.js": "^0.10.13",
     "store": "^2.0.12",
     "validator": "^10.7.0",
-    "webpack-remove-serviceworker-plugin": "^1.0.0"
+    "webpack-remove-serviceworker-plugin": "^1.0.0",
+    "snyk": "^1.316.1"
   },
   "keywords": [
     "gatsby"
@@ -79,7 +80,9 @@
     "format:src": "prettier-eslint --write --trailing-comma none --single-quote './src/**/*.js'",
     "format:utils": "prettier-eslint --write --trailing-comma none --single-quote './utils/**/*.js'",
     "format": "npm run format:gatsby && npm run format:src && npm run format:utils",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-plugin-transform-imports": "^1.5.0",
@@ -97,5 +100,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  }
+  },
+  "snyk": true
 }
