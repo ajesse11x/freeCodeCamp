@@ -62,7 +62,7 @@
     "rxjs": "^6.3.3",
     "sass.js": "^0.10.13",
     "store": "^2.0.12",
-    "validator": "^10.7.0",
+    "validator": "^13.15.20",
     "webpack-remove-serviceworker-plugin": "^1.0.0"
   },
   "keywords": [
